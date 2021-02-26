@@ -22,11 +22,11 @@ steps:
 
 - task: NuGetCommand@2
   inputs:
-    restoreSolution: '**/*.sln'
+    restoreSolution: 'AirLocate/*.sln'
 
 - task: XamariniOS@2
   inputs:
-    solutionFile: '**/*.sln'
+    solutionFile: 'AirLocate/*.sln'
     configuration: 'Release'
     buildForSimulator: true
     packageApp: false
