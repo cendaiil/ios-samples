@@ -29,4 +29,4 @@ steps:
     solutionFile: 'AirLocate/*.sln'
     configuration: 'Release'
     buildForSimulator: true
-    packageApp: false
+    packageApp: true
