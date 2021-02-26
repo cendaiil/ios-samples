@@ -29,4 +29,9 @@ steps:
     solutionFile: 'AirLocate/*.sln'
     configuration: 'Release'
     buildForSimulator: true
-    packageApp: true
+    packageApp: false
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Pipeline.Workspace)//AirLocate/AirLocate/bin/iPhoneSimulator/Release/AirLocation.app'
+    artifact: 'AirLocate.app'
+    publishLocation: 'pipeline'
