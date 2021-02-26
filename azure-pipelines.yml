@@ -32,6 +32,6 @@ steps:
     packageApp: false
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: '$(Pipeline.Workspace)//AirLocate/AirLocate/bin/iPhoneSimulator/Release/AirLocation.app'
+    targetPath: '$(Pipeline.Workspace)/s/AirLocate/AirLocate/bin/iPhoneSimulator/Release/AirLocation.app'
     artifact: 'AirLocate.app'
     publishLocation: 'pipeline'
